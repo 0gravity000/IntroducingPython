@@ -1,3 +1,4 @@
+# 2.3.7 [ start:end:step ]によるスライス
 letters = 'abcdefghijklmnopqrstuvwxyz'
 
 letters[:]

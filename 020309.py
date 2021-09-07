@@ -1,4 +1,4 @@
-# split()による分割
+# 2.3.9 split()による分割
 todos = 'get gloves,get mask,give cat vitamins,call ambulance'
 todos.split(',')
 

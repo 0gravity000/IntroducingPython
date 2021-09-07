@@ -1,4 +1,4 @@
-# 大文字と小文字の区別、配置
+# 2.3.12 大文字と小文字の区別、配置
 setup = 'a duck goes into a bar...'
 print(setup)
 

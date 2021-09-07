@@ -1,4 +1,4 @@
-# replace()による置換
+# 2.3.13 replace()による置換
 setup = 'a duck goes into a bar...'
 print(setup)
 

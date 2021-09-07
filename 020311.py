@@ -1,4 +1,4 @@
-# 多彩な文字列操作
+# 2.3.11 多彩な文字列操作
 poem = '''All tjat doth flow we cannot liquid name
 Or else would fire and water be the same;
 But that is liquid whice is moist and wet
