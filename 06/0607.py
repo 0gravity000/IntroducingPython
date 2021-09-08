@@ -6,4 +6,6 @@ class Car1():
 car = Car1
 car.exclaim()
 
+# これでもOK。car.exclaim()と同じ
+# でもあえて使う理由はない
 Car1.exclaim(car)
