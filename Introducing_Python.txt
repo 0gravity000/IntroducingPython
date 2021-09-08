@@ -3,6 +3,9 @@ Introducing Python
 
 C:\Users\0grav\AppData\Local\Programs\Python\Python38
 
+サンプルコード
+https://github.com/madscheme/introducing-python
+
 ---
 目次
 
