@@ -340,10 +340,11 @@ signals = {'green': 'go', 'yellow': 'go faster', 'red': 'smile for the camera'}
 signals.keys()
 list(signals.keys())
 
-# .4.10 values()によるすべての値の取得
+# 3.4.10 values()によるすべての値の取得
 list(signals.values())
 
-# .4.11 items()によるすべてのキー/値ペアの取得
+# 3.4.11 items()によるすべてのキー/値ペアの取得
+# キー/値ペアはタプルで返される
 list(signals.items())
 
 # =による代入とcopy()によるコピー
