@@ -1,7 +1,9 @@
 # 6.9 非公開属性のための名前のマングリング
-class Duck1():
+# Pythonは、クラス定義の外からが見えないようにすべき属性の命名方法を持っている
+# 先頭にふたつのアンダースコア__を付ける
+class Duck():
     def __init__(self, input_name):
-        self.__name = input_name
+        self.__name = input_name    #外からアクセスできないプロパティ
     @property
     def name(self): #ゲッター
         print('inside the getter')
@@ -11,13 +13,14 @@ class Duck1():
         print('inside the setter')
         self.__name = input_name
 
-fowl = Duck1('Howard')
+# オブジェクト(インスタンス)を作る
+fowl = Duck('Howard')
+# ゲッター
 fowl.name
-
+# セッター
 fowl.name = 'Donald'
-
 fowl.name
+# __name属性にはアクセスできない
+fowl.__name     # エラー
 
-fowl.__name     # エラー __name属性にはアクセスできない
-
-fowl._Duck1__name
+fowl._Duck__name
