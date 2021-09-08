@@ -1,5 +1,5 @@
 # 5.5.1 setdefault()とdefaultdict()による存在しないキーの処理
-periodic_table = ['Hydrogen': 1, 'Helium':2]
+periodic_table = {'Hydrogen': 1, 'Helium': 2}
 print(periodic_table)
 
 carbon = periodic_table.setdefault('Carbon', 12)
@@ -13,7 +13,7 @@ helium
 periodic_table
 
 #
-from collection import defaultdict
+from collections import defaultdict
 periodic_table = defaultdict(int)
 
 periodic_table['Hydrogen'] = 1
