@@ -1,5 +1,6 @@
 # 8.2.4 JSON
-menu = ¥
+# JavaScript Object Notation
+menu = \
 {
     "breakfast": {
         "hours": "7-11",
@@ -22,23 +23,25 @@ menu = ¥
             }
 }
 
+# データ構造をJSON文字列にエンコードする
 import json
-menu_json = json.dumps(mene)
+menu_json = json.dumps(menu)
 menu_json
 
+# load()で、Pythonデータ構造に戻す
 menu2 = json.loads(menu_json)
 menu2
 
 import datetime
 now = datetime.datetime.utcnow()
 now
-
+# エラー JSON標準が日付、時刻型を定義していないため
 json.dumps(now)
 
-#
+# datetimeを文字列に変換
 now_str = str(now)
 json.dumps(now_str)
-
+# datetimeをUnix時間に変換（たぶん）
 from time import mktime
 now_epoch = int(mktime(now.timetuple()))
 json.dumps(now_epoch)

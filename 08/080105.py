@@ -4,5 +4,6 @@ poem = '''There was a young lady named Bright,
     She started one day
     In a return on the previos night.'''
 
-with open('relativity', 'wt') as fout:
+with open('./08/relativity', 'wt') as fout:
     fout.write(poem)
+    

@@ -2,12 +2,12 @@
 bdata = bytes(range(0, 256))
 len(bdata)
 
-fout = open('bfile', 'wb')
+fout = open('./08/bfile', 'wb')
 fout.write(bdata)
-
 fout.close
 
-fout = open('bfile', 'wb')
+# チャンクを指定して書き込みできる
+fout = open('./08/bfile', 'wb')
 size = len(bdata)
 offset = 0
 chunk = 100
@@ -16,5 +16,4 @@ while True:
         break
     fout.write(bdata[offset:offset+chunk])
     offset += chunk
-
 fout.close

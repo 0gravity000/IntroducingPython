@@ -1,5 +1,14 @@
+# 8.5.3 Redis
+# Redisはデータ構造サーバー
+# pip install redis
+# Redisサーバーのインストールも必要
+# https://weblabo.oscasierra.net/redis-windows-install/
+
 # 8.5.3.6 ビット 
+# Redisをインポート
 import redis
+# Redisサーバーに接続
+# redis.Redis('localhost')、redis.Redis('localhost', '6379')でもOK
 conn = redis.Redis()
 
 days = ['2013-02-25', '2013-02-26', '2013-02-27']

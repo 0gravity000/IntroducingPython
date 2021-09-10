@@ -1,11 +1,13 @@
 # 8.2.9 pickleによるシリアライズ
+# ファイルにデータ構造を保存することをシリアライズ（直列化）という
+# Pythonは、特別なバイナリ形式で、あらゆるオブジェクトを保存、復元できる
+# pickleモジュールを提供している
 import pickle
 import datetime
 now1 = datetime.datetime.utcnow()
 pickled = pickle.dumps(now1)
 now2 = pickle.loads(pickled)
 now1
-
 now2
 
 #
