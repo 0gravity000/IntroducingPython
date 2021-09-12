@@ -1,7 +1,7 @@
 import unittest
-import cap2
+import cap3
 
-class TestCap2(unittest.TestCase):
+class TestCap(unittest.TestCase):
 
     def setUp(self):
         pass
@@ -11,13 +11,19 @@ class TestCap2(unittest.TestCase):
 
     def test_one_word(self):
         text = 'duck'
-        result = cap2.just_do_it(text)
+        result = cap3.just_do_it(text)
         self.assertEqual(result, 'Duck')
 
     def test_multiple_words(self):
         text = 'a varitable flock of ducks'
-        result = cap2.just_do_it(text)
+        result = cap3.just_do_it(text)
         self.assertEqual(result, 'A Varitable Flock Of Ducks')
+
+    def test_words_with_apostrophes(self):
+        text = "I'm fresh out of ideas"
+        result = cap3.just_do_it(text)
+        self.assertEqual(result, "I'm Fresh Out Of Ideas")
 
 if __name__ == '__main__':
     unittest.main()
+    
