@@ -1,3 +1,6 @@
+# 12.10 コードの最適化
+# 12.10.2 アルゴリズムとデータ構造
+
 from timeit import timeit
 
 def make_list_1():
