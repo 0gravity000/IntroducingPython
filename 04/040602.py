@@ -1,4 +1,4 @@
-# 4.6.2 辞書包括表現
+# 4.6.2 辞書包括表現　辞書内包表記？
 # {key_item: value_item for item in iterable}
 word = 'letters'
 letter_counts = {letter: word.count(letter) for letter in word}
