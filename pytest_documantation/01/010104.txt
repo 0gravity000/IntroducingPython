@@ -1,0 +1,20 @@
+1.1.4 Assert that a certain exception is raised
+1.1.4特定の例外が発生したことを表明する
+
+Use the raises helper to assert that some code raises an exception:
+レイズヘルパーを使用して、一部のコードで例外が発生することを表明します。
+
+# content of test_sysexit.py
+import pytest
+def f():
+raise SystemExit(1)
+def test_mytest():
+with pytest.raises(SystemExit):
+f()
+
+Execute the test function with “quiet” reporting mode:
+$ pytest -q test_sysexit.py
+. [100%]
+1 passed in 0.12s
+
+Note: The -q/--quiet flag keeps the output brief in this and following examples.

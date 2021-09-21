@@ -1,0 +1,13 @@
+1.1 Get Started
+1.1 はじめに
+1.1.1 Install pytest
+1.1.1 Install pytest
+pytest requires: Python 3.6, 3.7, 3.8, 3.9, or PyPy3.
+
+1. Run the following command in your command line:
+pip install -U pytest
+
+2. Check that you installed the correct version:
+$ pytest --version
+pytest 6.2.5
+

@@ -1,0 +1,37 @@
+1.1.2 Create your first test
+1.1.2 最初のテストを作成する
+
+Create a new file called test_sample.py, containing a function, and a test:
+# content of test_sample.py
+def func(x):
+return x + 1
+def test_answer():
+assert func(3) == 5
+
+The test
+$ pytest
+=========================== test session starts ============================
+platform linux -- Python 3.x.y, pytest-6.x.y, py-1.x.y, pluggy-1.x.y
+cachedir: $PYTHON_PREFIX/.pytest_cache
+rootdir: $REGENDOC_TMPDIR
+collected 1 item
+test_sample.py F [100%]
+================================= FAILURES =================================
+_______________________________ test_answer ________________________________
+(continues on next page)
+3
+pytest Documentation, Release 0.1
+(continued from previous page)
+def test_answer():
+> assert func(3) == 5
+E assert 4 == 5
+E + where 4 = func(3)
+test_sample.py:6: AssertionError
+========================= short test summary info ==========================
+FAILED test_sample.py::test_answer - assert 4 == 5
+============================ 1 failed in 0.12s =============================
+The [100%] refers to the overall progress of running all test cases. After it finishes, pytest then shows a failure report
+because func(3) does not return 5.
+Note: You can use the assert statement to verify test expectations. pytest’s Advanced assertion introspection will
+intelligently report intermediate values of the assert expression so you can avoid the many names of JUnit legacy
+methods.
