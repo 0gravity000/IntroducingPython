@@ -1,0 +1,11 @@
+1.1.6 Request a unique temporary directory for functional tests
+1.1.6 機能テスト用に一意の一時ディレクトリをリクエストする
+
+pytest provides Builtin fixtures/function arguments to request arbitrary resources, like a unique temporary directory:
+pytestは、一意の一時ディレクトリなど、任意のリソースを要求するための組み込みのフィクスチャ/関数引数を提供します。
+
+# content of test_tmp_path.py
+def test_needsfiles(tmp_path):
+print(tmp_path)
+assert 0
+

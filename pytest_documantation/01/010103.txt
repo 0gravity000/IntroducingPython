@@ -1,0 +1,10 @@
+1.1.3 Run multiple tests
+1.1.3 複数のテストを実行する
+
+pytest will run all files of the form test_*.py or *_test.py in the current directory and its subdirectories. More
+generally, it follows standard test discovery rules.
+
+pytestは、現在のディレクトリとそのサブディレクトリにあるtest _*.pyまたは*_test.pyの形式のすべてのファイルを実行します。
+より一般的には、標準のテスト検出ルールに従います。
+4.3.2 Conventions for Python test discovery
+

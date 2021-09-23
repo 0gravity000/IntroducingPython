@@ -1,0 +1,24 @@
+1.1.7 Continue reading
+1.1.7 続きを読む
+
+Check out additional pytest resources to help you customize tests for your unique workflow:
+• “How to invoke pytest” for command line invocation examples
+• “How to use pytest with an existing test suite” for working with pre-existing tests
+• “How to mark test functions with attributes” for information on the pytest.mark mechanism
+• “Fixtures reference” for providing a functional baseline to your tests
+• “Writing plugins” for managing and writing plugins
+• “Good Integration Practices” for virtualenv and test layouts
+
+独自のワークフローに合わせてテストをカスタマイズするのに役立つ追加のpytestリソースを確認してください。
+•コマンドライン呼び出しの例については、「pytestを呼び出す方法」
+    2.1 How to invoke pytest
+•既存のテストを操作するための「既存のテストスイートでpytestを使用する方法」
+    2.17 How to use pytest with an existing test suite
+•pytest.markメカニズムについては、「テスト関数を属性でマークする方法」を参照してください。
+    2.4 How to mark test functions with attributes
+•テストに機能的なベースラインを提供するための「フィクスチャリファレンス」
+    3.1 Fixtures reference
+•プラグインを管理および作成するための「プラグインの作成」
+    2.15 Writing plugins
+•virtualenvおよびテストレイアウトの「優れた統合プラクティス」
+    4.3 Good Integration Practices
