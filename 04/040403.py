@@ -1,4 +1,9 @@
 # 4.4.3 while-elseによるbreakチェック
+
+# 何かをチェックするためにwhileループを書き、
+# それが見つかったらbreakする
+# whileループが終了したものの、探しものが見つからなかった場合elseが実行される
+# このelseはbreakチェッカーと考えるとよい
 numbers = [1, 3, 5]
 position = 0
 while position < len(numbers):
