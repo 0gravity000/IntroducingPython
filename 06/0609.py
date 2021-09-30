@@ -17,10 +17,25 @@ class Duck():
 fowl = Duck('Howard')
 # ゲッター
 fowl.name
+# inside the getter
+# 'Howard'
+
 # セッター
 fowl.name = 'Donald'
+# inside the setter
+
 fowl.name
+# inside the getter
+# 'Donald'
+
 # __name属性にはアクセスできない
 fowl.__name     # エラー
+'''
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'Duck' object has no attribute '__name'
+'''
 
+# これだとアクセスできる
 fowl._Duck__name
+# 'Donald'

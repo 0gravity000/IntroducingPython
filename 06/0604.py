@@ -5,7 +5,8 @@ class Car1():
     def exclaim(self):
         print("I'm a Car!")
 
-# 子クラスでexclaim()メソッドをオーバーライドする
+# 子クラスでexclaim()メソッドをオーバーライドする。
+# exclaim()の振る舞いが書き換えられる
 class Yugo1(Car1):
     def exclaim(self):
         print("I'm a Yugo! Much like a Car, but more Yugo-ish.")
@@ -25,7 +26,7 @@ class Person():
 # 子クラス
 class MDPerson(Person):
     def __init__(self, name):
-        self.name = "Doctor" + name
+        self.name = "Doctor " + name
 
 # 子クラス
 class JDPerson(Person):
@@ -37,6 +38,7 @@ person = Person('Fudd')
 doctor = MDPerson('Fudd')
 lower = JDPerson('Fudd')
 
-print(person.name)
-print(doctor.name)
-print(lower.name)
+print(person.name)  # Fudd
+print(doctor.name)  # Doctor Fudd
+print(lower.name)   # Fudd, Esquire
+

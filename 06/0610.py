@@ -1,10 +1,10 @@
 # 6.10 メソッドのタイプ
 # メソッドの第1引数がselfなら、インスタンスメソッド（いわゆる普通のメソッド）
-# @acakkmethodデコレータと第1引数がclsなら、クラスメソッド
+# @classmethodデコレータと第1引数がclsなら、クラスメソッド
 class A():
     count = 0
     def __init__(self):
-        A.count += 1    # self.countだとインスタンスの属性になってしまう
+        A.count += 1    # これは、クラス属性。self.countだとインスタンスの属性になってしまう
     def exclaim(self):
         print("I'm an A!")
     @classmethod
@@ -16,7 +16,7 @@ easy_a = A()
 breezy_a = A()
 wheezy_a = A()
 # クラスメソッドを呼び出す
-A.kids()
+A.kids()    # A has 3 Little objects
 
 # 静的メソッド
 # クラスにもオブジェクト(インスタンス)にも影響を与えない
@@ -30,4 +30,5 @@ class CoyoteWeapon():
         print('This CoyoteWeapon has brought to you by Acme')
 
 # オブジェクト(インスタンス)を作らず、実行できる
-CoyoteWeapon.commercial()
+CoyoteWeapon.commercial()   # This CoyoteWeapon has brought to you by Acme
+

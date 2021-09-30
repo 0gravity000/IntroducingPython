@@ -18,14 +18,30 @@ class Duck():
 fowl = Duck('Howard')
 # nameプロパティを参照すると、実際にはゲッターget_name()メソッドが呼び出される
 fowl.name
+# inside the getter
+# 'Howard'
+
 # ゲッターget_name()メソッドを普通に呼び出すこともできる
 fowl.get_name()
+# inside the getter
+# 'Howard'
+
 # nameプロパティに値を入れると、セッターset_name()メソッドが呼び出される
 fowl.name = 'Daffy'
+# inside the setter
+
 fowl.name
+# inside the getter
+# 'Daffy'
+
 # set_name()メソッドを普通に呼び出すこともできる
 fowl.set_name('Daffy')
+# inside the setter
+
 fowl.name
+# inside the getter
+# 'Daffy'
+
 
 #プロパティはデコレータで定義することもできる
 # ともにname()という名前を持つが、前につくデコレータが異なる2つのメソッドを定義
@@ -49,9 +65,14 @@ class Duck():
 fowl = Duck('Howard')
 # ゲッター
 fowl.name
+# inside the getter
+# 'Howard'
+
 # セッター
 fowl.name = 'Donald'
 fowl.name
+# inside the getter
+# 'Donald'
 
 # プロパティは計算された値も参照できる
 class Circle():
@@ -64,15 +85,20 @@ class Circle():
 # オブジェクト(インスタンス)を作る
 c = Circle(5)
 # 
-c.radius
+c.radius    # 5
 # diameterプロパティにアクセスする（ゲッター）
-c.diameter
+c.diameter  # 10
 # 別の値を設定
 c.radius = 7
-c.diameter
+c.diameter  # 14
 # diameterはセッターを指定していないのでエラー
 # diameterは読み出し専用のプロパティとして動作する
 c.diameter = 20
+'''
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: can't set attribute
+'''
 
 # プロパティの定義を書き換えても、クラス定義内のコードを書き変えるだけで済み
 # 呼び出し元には手を付ける必要がない、というメリットがある
